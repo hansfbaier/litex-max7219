@@ -181,7 +181,7 @@ static void maxSendSequence(uint8_t *pSequence, uint8_t len)
       spi_mosi_write((pSequence[i]) << 8 | pSequence[i+1]);
       spi_control_length_write(16);
       spi_control_start_write(1);
-      printf("%02x", spi_mosi_read());
+      printf("%04x", spi_mosi_read());
    }
    puts("  done");
 } /* maxSendSequence() */

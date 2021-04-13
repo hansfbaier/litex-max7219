@@ -136,10 +136,10 @@ char cTemp[64];
 
 static void maxShow(void)
 {
-	int iNumControllers = 2, iSegmentMode = 0; // 0: dot matrix, 1: 7 segment
+	int iNumControllers = 1, iSegmentMode = 0; // 0: dot matrix, 1: 7 segment
 	maxInit(iNumControllers, iSegmentMode, 0);
 	maxSetIntensity(4);
-	int iPitch = 40; // bytes per line of image
+	int iPitch = 24; // bytes per line of image
 	memset(bImg, 0, iPitch*8);
 	for (int i = 0; i < 2; i++)
 	{
