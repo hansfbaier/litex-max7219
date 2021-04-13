@@ -10,4 +10,8 @@ LED matrix demo.
 
 My thanks goes to the original autor of the MAX8219
 driver code, which I adapted to run on LiteX:
+
 https://github.com/bitbank2/MAX7219
+
+Also many thanks to Florent Kermarrec of the LiteX project,
+for the code skeleton of this demo application.
